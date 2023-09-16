@@ -1,11 +1,19 @@
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-
+.page-wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
 
 // new section
 
@@ -16,24 +24,26 @@ $imgBgColor: rgb(9, 73, 141);
 $primaryColor:rgb(6, 69, 135);
 $secondaryColor:rgb(234, 156, 0);
 $sectionBgPrimary:rgb(9, 73, 141);
-$primaryBtnColor:rgb(0, 24, 203);
+$primaryBtnColor:rgb(0, 25, 213);
 $secondaryBtnColor:white;
 
+$sectionSecondaryBg:rgb(7, 7, 98);
 
 //nav
 nav{
   display: flex;
-  height: 65px;
   background-color: white;
   flex-direction: row;
   align-items: center;
-  padding: 0 20px;
+  height: auto;
+  padding: 18px 20px;
   font-size: 15px;
   font-weight: 500;
 }
+
 .nav-logo-brand {
-  font-size: 23px;
-  margin-right: 30px;
+  font-size: 28px;
+  margin-right: 24px;
   font-weight: 600;
   width: 100%;
   color: black;
@@ -43,22 +53,42 @@ nav{
 .navLinkWrapper{
   display: none;
   width: 100%;
+  justify-content: flex-start;
   flex-direction: row;
 }
 
 .navLink{
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
-  color:  rgb(55, 87, 121);
+  color:  rgb(49, 73, 99);
+  margin: 0 16px;
 }
 
 // toast
 
 .heroToast{
-  color: rgb(42 49 106);
+  display: flex;
+  justify-content: center;
+  color: rgb(54, 20, 126);
   font-size: 15px;
-  padding: 24px 20px;
-  background-color: rgb(191 185 224); 
+  padding: 18px 20px;
+  background-color: rgb(221, 215, 252); 
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 1.5;
+
+  a{
+    font-family: "Open Sans", sans-serif;
+    color: #7a00cb;
+    font-weight: 500;
+    display: inline;
+  }
+
+
+}
+
+.toast-link{
+  color: $primaryBtnColor;
 }
 
 .section-hero{
@@ -80,13 +110,17 @@ nav{
 }
 
 .p-hero{
-  margin-top: 32px;
-  font-size: 24px;
+  margin-top: 24px;
+  font-size: 21.5px;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .p-section{
   line-height: 1.6;
-  font-size: 19px;
+  font-size: 18px;
+  font-weight: 500;
+  color: $primaryColor;
 }
 
 .new-hero-btn{
@@ -94,14 +128,14 @@ nav{
   padding: 18px 34px;
   border: none;
   font-size: 18px;
-  border-radius: 18px;
+  border-radius: 16px;
   background-color: rgb(255, 179, 0);
 }
 
 .navButton{
-  padding: 7px 11px;
+  padding: 11px 15px;
   border: none;
-  font-size: 14px;
+  font-size: 14.5px;
   border: none;
   background-color: rgb(0, 142, 31);
   border-radius: 5px;
@@ -131,6 +165,11 @@ nav{
   background-position: center;
 }
 
+.hero-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 // section
@@ -157,9 +196,9 @@ nav{
 }
 
 .desktop-img{
+  display: none;
   height: 400px;
   width: 100%;
-  display: none;
   border-radius: 5px;
 }
 
@@ -178,24 +217,88 @@ nav{
 }
 
 .primary-bg-1{
-  background-image:linear-gradient(180deg, rgb(255, 255, 255),  rgb(255, 255, 255), rgb(244, 249, 255),rgb(244, 249, 255), rgb(205 211 214));
+  background-image:linear-gradient(180deg, rgb(255, 255, 255),  rgb(255, 255, 255), rgb(244, 249, 255),rgb(244, 249, 255),rgb(244, 249, 255), rgb(205 211 214));
 }
+
+
+// local image
 
 .local-bg{
-  background-color: rgb(77, 77, 187);
-}
-.commitment-bg{
-  background-color: rgb(240, 161, 13);
-}
-.enterprise-bg{
-  background-size: cover;
-  background-image: url(./images/windows-hNiNxhUfCfQ-unsplash\ \(1\).jpg);
-  background-position: 50% 60%;
+  overflow: hidden;
+  background-color: rgb(123, 66, 215);
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  box-sizing: border-box;
+  min-height: 380px;
 }
 
-.section-secondary-bg{
-  background-color: rgb(14, 14, 85);
+.local-img{
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/local.png);
+  background-repeat: no-repeat;
+  background-size: clamp(360px, 45vw, 410px);
+  background-position: center;
 }
+
+
+
+// commitment
+
+.commitment-bg{
+  overflow: hidden;
+  background-color: rgb(240, 161, 13);
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  box-sizing: border-box;
+  min-height: 380px;
+}
+
+.commitment-img{
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/handshake.png);
+  background-repeat: no-repeat;
+  background-size: clamp(320px, 45vw, 410px);
+  background-position: center;
+}
+
+
+
+
+// enterprise
+
+.enterprise-bg{
+  overflow: hidden;
+  background-color: rgb(19, 36, 121);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 520px;
+}
+
+.enterprise-img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./images/windows-hNiNxhUfCfQ-unsplash\ \(1\).jpg);
+  background-position: 50% 50%;
+}
+
+
+
+
+.section-secondary-bg{
+  background-color: $sectionSecondaryBg;
+}
+
+.section-tertiary-bg{
+  background-color: rgb(0, 57, 170);
+}
+
 .secondary-title-color{
   color: white;
 }
@@ -208,9 +311,12 @@ nav{
 .remove-top-bottom-padding{
   padding: 70px 30px 0 30px;
 }
-.section-border{
-  border-bottom: 2px solid rgb(77, 86, 115);
+.hero-bg-fade{
+  background-color: rgb(0, 71, 212);
+  // background-image: linear-gradient(180deg, rgb(8, 8, 201), rgb(8, 8, 201));
+  height: auto;
 }
+
 
 
 // brands
@@ -231,8 +337,8 @@ nav{
 }
 
 .brand-logo{
-  height: 100px;
-  width: 100px;
+  height:110px;
+  width:110px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -260,7 +366,7 @@ nav{
 .page-btn{
   margin-top: 15px;
   padding: 6px 9px;
-  border-radius: $navButtonRadius;
+  border-radius: 2px;
   letter-spacing: 0.4px;
   font-size: 14px;
   font-weight: 600;
@@ -270,7 +376,7 @@ nav{
 } 
 
 .primary-btn-color{
-  border: 1px solid $primaryBtnColor;
+  border: 1.5px solid $primaryBtnColor;
   background-color: transparent;
   color:  $primaryBtnColor;
 }
@@ -290,7 +396,8 @@ nav{
 
 footer {
     background-color: #ebecee; 
-    padding: 40px 30px;
+    padding: 28px 30px;
+    border-top: 1px solid rgb(214, 214, 214);
 }
 
 .footer-content {
@@ -304,9 +411,9 @@ footer {
 }
 
 .footer-logo{
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 600;
-  color: #8f96aeea;
+  color: #78819dd3;
   font-family: "Work Sans", sans-serif;
   margin-bottom: 5px;
 
@@ -328,7 +435,7 @@ footer {
 .footer-links ul li a {
   text-decoration: none;
   color: #5e6a8d;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -347,18 +454,82 @@ footer {
 @media (min-width: 1050px) {
   
 
+
 // nav
-.navLinkWrapper{
-  display: none;
-  flex-direction: row;
+
+nav{
+  height: auto;
+  padding: 12px 140px;
 }
+
+.nav-logo-brand {
+  width: auto;
+  margin-right: 0;
+}
+
+.navLinkWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 20px;
+
+  .navLink{
+    margin-right: 15px;
+  }
+}
+
+
+// hero
+.hero-wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 580px;
+}
+
+.section-hero{
+  padding: 70px 70px;
+}
+.section-hero-img{
+  height: 100%;
+}
+
+.h1-hero{
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0 15px 0 0;
+}
+
+.p-hero{
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.new-hero-btn{
+  font-size: 14px;
+  font-weight: 600;
+  color: $imgBgColor;
+  margin-top: 18px;
+  padding: 14px 30px;
+}
+
 
 // content section
 .section-content{
   display: flex;
   flex-direction: row;
-  padding: 70px 30px;
+  padding: 70px 180px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
+.section-content-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 66.7%;
+}
+
 .mobile-img{
   display: none;
 }
@@ -367,19 +538,27 @@ footer {
   margin: 0;
 }
 
-.section-content-wrapper{
-  display: flex;
-  flex-direction: column;
-  width: 66.6667%;
-}
+
+// fonts
 
 .new-section-title{
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 600;
   margin: 0;
   line-height: 1.35;  
   text-align: flex-start;
 }
+
+.p-section{
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.secondary-title-color{
+  color: white;
+}
+
 
 // brands
 .brands-settings{
@@ -388,7 +567,18 @@ footer {
   text-align: center;
 }
 
+.brand-logo{
+  height:65px;
+  width:85px;
+}
+
+
 // footer
+
+footer {
+  padding: 14px 30px 28px 30px;
+}
+
 .footer-content {
   flex-direction: row;
   text-align: left;
@@ -404,5 +594,28 @@ footer {
   margin-left: 20px;
 }
 
+// commitment
+
+.commitment-bg, .local-bg{
+  padding: 35px;
+  min-height: 350px;
+  height: 350px;
+  width: 60%;
+}
+// enterprise
+.enterprise-bg{
+  min-height: 480px;
+}
+.enterprise-img{
+  background-size: cover;
+  background-position: 80% 65%;
+}
+
+// toast
+.heroToast{
+  font-size: 14.5px;
+  font-weight: 500;
+  padding: 18px 20px;
+}
 
 }

@@ -204,7 +204,7 @@ nav {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  min-height: 380px;
+  min-height: 320px;
 }
 
 .local-img {
@@ -222,7 +222,7 @@ nav {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  min-height: 380px;
+  min-height: 320px;
 }
 
 .commitment-img {
@@ -240,7 +240,7 @@ nav {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  min-height: 520px;
+  min-height: 380px;
 }
 
 .enterprise-img {

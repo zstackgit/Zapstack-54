@@ -1,0 +1,359 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  height: 65px;
+  background-color: white;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-logo-brand {
+  font-size: 23px;
+  margin-right: 30px;
+  font-weight: 600;
+  width: 100%;
+  color: black;
+  font-family: "Work Sans", sans-serif;
+}
+
+.navLinkWrapper {
+  display: none;
+  width: 100%;
+  flex-direction: row;
+}
+
+.navLink {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(55, 87, 121);
+}
+
+.heroToast {
+  color: rgb(42, 49, 106);
+  font-size: 15px;
+  padding: 24px 20px;
+  background-color: rgb(191, 185, 224);
+}
+
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px 100px 30px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+
+.salesforceTextWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.h1-hero {
+  font-size: 46px;
+  margin: 0 15px 0 0;
+}
+
+.p-hero {
+  margin-top: 32px;
+  font-size: 24px;
+}
+
+.p-section {
+  line-height: 1.6;
+  font-size: 19px;
+}
+
+.new-hero-btn {
+  margin-top: 24px;
+  padding: 18px 34px;
+  border: none;
+  font-size: 18px;
+  border-radius: 18px;
+  background-color: rgb(255, 179, 0);
+}
+
+.navButton {
+  padding: 7px 11px;
+  border: none;
+  font-size: 14px;
+  border: none;
+  background-color: rgb(0, 142, 31);
+  border-radius: 5px;
+  color: white;
+}
+
+.salesforce-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(images/salesforce-logo.png);
+  background-position: center;
+  width: 100px;
+  height: 55px;
+}
+
+.section-hero-img {
+  width: 100%;
+  height: 600px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./images/mobile-annie-spratt-QckxruozjRg-unsplash.jpg);
+  background-position: center;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 30px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+
+.img-settings {
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 30px 0 40px 0;
+}
+
+.mobile-img {
+  height: 278px;
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+  margin: 0 0 30px 0;
+}
+
+.desktop-img {
+  height: 400px;
+  width: 100%;
+  display: none;
+  border-radius: 5px;
+}
+
+.new-section-title {
+  font-size: 27px;
+  color: rgb(0, 43, 129);
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: flex-start;
+  margin: 0 0 30px 0;
+}
+
+.section-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-bg-1 {
+  background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(255, 255, 255), rgb(244, 249, 255), rgb(244, 249, 255), rgb(205, 211, 214));
+}
+
+.local-bg {
+  background-color: rgb(77, 77, 187);
+}
+
+.commitment-bg {
+  background-color: rgb(240, 161, 13);
+}
+
+.enterprise-bg {
+  background-size: cover;
+  background-image: url(./images/windows-hNiNxhUfCfQ-unsplash\ \(1\).jpg);
+  background-position: 50% 60%;
+}
+
+.section-secondary-bg {
+  background-color: rgb(14, 14, 85);
+}
+
+.secondary-title-color {
+  color: white;
+}
+
+.secondary-text-color {
+  color: rgb(208, 208, 247);
+}
+
+.remove-top-bottom-padding {
+  padding: 70px 30px 0 30px;
+}
+
+.section-border {
+  border-bottom: 2px solid rgb(77, 86, 115);
+}
+
+.brands-settings {
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.brand-logo-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px;
+}
+
+.brand-1 {
+  background-image: url(./images/Coles_logo.svg.png);
+}
+
+.brand-2 {
+  background-image: url(./images/Frog_Design_logo.svg.png);
+}
+
+.brand-3 {
+  background-image: url(./images/Official-Worksafe-Victoria-Logo-Small.png);
+}
+
+.brand-4 {
+  background-image: url(./images/salesforce-logo.png);
+}
+
+.page-btn {
+  margin-top: 15px;
+  padding: 6px 9px;
+  border-radius: 4px;
+  letter-spacing: 0.4px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.primary-btn-color {
+  border: 1px solid rgb(0, 24, 203);
+  background-color: transparent;
+  color: rgb(0, 24, 203);
+}
+
+.secondary-btn-color {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+footer {
+  background-color: #ebecee;
+  padding: 40px 30px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 21px;
+  font-weight: 600;
+  color: rgba(143, 150, 174, 0.9176470588);
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 5px;
+}
+.footer-logo span {
+  font-size: 9px;
+  margin-bottom: -5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 13px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #5e6a8d;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #0d2f51; /* Hover color similar to Atlassian */
+}
+
+@media (min-width: 1050px) {
+  .navLinkWrapper {
+    display: none;
+    flex-direction: row;
+  }
+  .section-content {
+    display: flex;
+    flex-direction: row;
+    padding: 70px 30px;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    margin: 0;
+  }
+  .section-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 66.6667%;
+  }
+  .new-section-title {
+    font-size: 27px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.35;
+    text-align: flex-start;
+  }
+  .brands-settings {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-content {
+    flex-direction: row;
+    text-align: left;
+  }
+  .footer-links ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-links ul li {
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -48,8 +48,11 @@ nav{
   width: 100%;
   letter-spacing: -.3px;
   color: black;
+  text-decoration: none;
   font-family: "Work Sans", sans-serif;
 }
+
+
 
 .navLinkWrapper{
   display: none;
@@ -128,19 +131,27 @@ nav{
   margin-top: 24px;
   padding: 17px 41px;
   border: none;
+  color: $imgBgColor;
   font-size: 18px;
   border-radius: 16px;
   background-color: rgb(255, 191, 0);
+}
+
+.remove-link-styling{
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .navButton{
   padding: 8px 15.5px;
   border: none;
   font-size: 14px;
-  border: none;
   background-color: rgb(0, 142, 31);
   border-radius: 5px;
   color: white;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
 
 .salesforce-logo{
@@ -366,7 +377,7 @@ nav{
   padding: 6px 9px;
   border-radius: 2px;
   letter-spacing: 0.4px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
@@ -432,7 +443,7 @@ footer {
 
 .footer-links ul li a {
   text-decoration: none;
-  color: #5e6a8d;
+  color: #4d587a;
   font-size: 13px;
   font-weight: 500;
   transition: color 0.3s;
@@ -528,9 +539,8 @@ nav{
 }
 
 
-
 .h1-hero{
-  font-size: 44px;
+  font-size: 50px;
   font-weight: 600;
   margin: 0 15px 0 0;
 }
@@ -538,15 +548,17 @@ nav{
 .p-hero{
   margin-top: 24px;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .new-hero-btn{
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: -.5px;
   font-weight: 600;
-  color: $imgBgColor;
-  margin-top: 18px;
-  padding: 14px 30px;
+  margin-top: 10px;
+  padding: 14px 34px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
 
 
@@ -611,7 +623,7 @@ nav{
 // footer
 
 footer {
-  padding: 14px 30px 28px 30px;
+  padding: 12px 30px 20px 30px;
 }
 
 .footer-content {
@@ -628,6 +640,7 @@ footer {
   margin-bottom: 0;
   margin-left: 20px;
 }
+
 
 // commitment 
 .commitment-bg, .local-bg{

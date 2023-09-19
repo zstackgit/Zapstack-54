@@ -42,8 +42,8 @@ nav{
 }
 
 .nav-logo-brand {
-  font-size: 28.5px;
-  margin-right: 24px;
+  font-size: 26px;
+  margin-right: 20px;
   font-weight: 600;
   width: 100%;
   letter-spacing: -.3px;
@@ -131,10 +131,11 @@ nav{
   margin-top: 24px;
   padding: 17px 41px;
   border: none;
-  color: $imgBgColor;
+  color: $sectionSecondaryBg;
   font-size: 18px;
-  border-radius: 16px;
+  border-radius: 14px;
   background-color: rgb(255, 191, 0);
+  font-weight: 500;
 }
 
 .remove-link-styling{
@@ -143,15 +144,16 @@ nav{
 }
 
 .navButton{
-  padding: 8px 15.5px;
+  padding: 8px 14px;
   border: none;
-  font-size: 14px;
+  font-size: 13.5px;
   background-color: rgb(0, 142, 31);
-  border-radius: 5px;
+  border-radius: 9.5px;
   color: white;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .salesforce-logo{
@@ -375,7 +377,7 @@ nav{
 .page-btn{
   margin-top: 15px;
   padding: 6px 9px;
-  border-radius: 2px;
+  border-radius: 9.5px;
   letter-spacing: 0.4px;
   font-size: 12px;
   font-weight: 600;
@@ -472,6 +474,7 @@ nav{
 }
 
 .nav-logo-brand {
+  font-size: 26.5px;
   width: auto;
   margin-right: 0;
 }
@@ -480,7 +483,7 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 20px;
+  margin: 20px 18px;
 
   .navLink{
     margin-right: 15px;
@@ -556,7 +559,7 @@ nav{
   letter-spacing: -.5px;
   font-weight: 600;
   margin-top: 10px;
-  padding: 14px 34px;
+  padding: 14px 40px;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
 }
